@@ -3,8 +3,13 @@ using System.Collections;
 
 public class WorldScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    //public value fields show as configurable properties in the Unity3D Inspector //Window
+
+    public float rotationPerFrame = 1f;
+
+
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
@@ -12,7 +17,10 @@ public class WorldScript : MonoBehaviour {
 	void Update () {
 
         //Rotate 1 degree around the y-axis every frame.
-        transform.Rotate(0f,1f,0f);
+
+        if (rotationPerFrame > 0f)
+
+            transform.Rotate(0f,1f,0f);
 
 	}
 }
