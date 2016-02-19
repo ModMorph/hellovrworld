@@ -70,3 +70,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Oculus signature file
+
+oculussig_05157df5c3a10d07
+*.apk
+Hello VR World/Assets/Builds/HelloVRWorld.apk
