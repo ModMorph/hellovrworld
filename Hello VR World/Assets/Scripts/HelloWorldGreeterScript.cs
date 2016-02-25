@@ -18,4 +18,20 @@ public class HelloWorldGreeterScript : MonoBehaviour {
 
         _animator.SetBool("isWaving", isWaving);
     }
+
+
+    public void OnRayCastHit(Vector3 vector)
+    {
+
+        
+          isWaving = !isWaving;
+
+        if(isWaving)
+        {
+            var audio = GetComponent<AudioSource>();
+            audio.Play(15000);
+        }
+
+    }
+
 }
