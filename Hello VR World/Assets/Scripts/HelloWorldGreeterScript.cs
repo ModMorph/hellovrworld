@@ -29,7 +29,7 @@ public class HelloWorldGreeterScript : MonoBehaviour {
         if(isWaving)
         {
             var audio = GetComponent<AudioSource>();
-            audio.Play(15000);
+            audio.Play(30000);
         }
 
     }
