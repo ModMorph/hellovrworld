@@ -26,12 +26,14 @@ public class HelloWorldGreeterScript : MonoBehaviour {
         
           isWaving = !isWaving;
 
-        if(isWaving)
-        {
-            var audio = GetComponent<AudioSource>();
-            audio.Play(30000);
-        }
+        
 
+    }
+
+    public void SayHelloVRWorld()
+    {
+        var audio = GetComponent<AudioSource>();
+        audio.Play(5000);
     }
 
 }

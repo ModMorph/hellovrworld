@@ -93,7 +93,7 @@ public class Jeeper : MonoBehaviour
 
         }
 
-
+       
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             OVRManager.PlatformUIGlobalMenu();
