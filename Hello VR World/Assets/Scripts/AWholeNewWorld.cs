@@ -7,16 +7,7 @@ public class AWholeNewWorld : MonoBehaviour {
     public float maxHeight = 15f;
     // Use this for initialization
 
-    public float minPlanetScale = 1f;
-    public float maxPlanetScale = 10f; 
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
     public void OnRayCastHit(Vector3 vector)
     {
@@ -36,9 +27,7 @@ public class AWholeNewWorld : MonoBehaviour {
    
         GameObject newPlanet = (GameObject)Instantiate(newPlanetPrefab, adjustedVector, Random.rotation);
 
-        //float scaleMultiplier = Random.Range(minPlanetScale,maxPlanetScale);
-
-        //newPlanet.transform.lossyScale.Set(scaleMultiplier,scaleMultiplier,scaleMultiplier);
+        //do something else....
 
        
     }
