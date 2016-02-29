@@ -1,17 +1,4 @@
-﻿/************************************************************************************
-
-Filename    :   Crosshair3D.cs
-Content     :   An example of a 3D cursor in the world based on player view
-Created     :   June 30, 2014
-Authors     :   Andrew Welch
-
-Copyright   :   Copyright 2014 Oculus VR, LLC. All Rights reserved.
-
-
-************************************************************************************/
-
-// uncomment this to test the different modes.
-#define CROSSHAIR_TESTING
+﻿
 
 using UnityEngine;
 using System.Collections;				// required for Coroutines
@@ -51,12 +38,7 @@ public class Jeeper : MonoBehaviour
                 transform.position = hit.point + (-cameraForward * offsetFromObjects);
                 transform.forward = -cameraForward;
 
-                //    if(Input.GetMouseButton(0))
-                //    {
-                //hit.transform.gameObject.BroadcastMessage("OnRayCastHit", hit.point, SendMessageOptions.DontRequireReceiver);
-
-                //}
-
+             
 
                 hit.transform.gameObject.BroadcastMessage("OnRayCastHit", hit.point, SendMessageOptions.DontRequireReceiver);
 
