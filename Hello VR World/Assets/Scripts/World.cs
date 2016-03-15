@@ -20,10 +20,11 @@ public class World : MonoBehaviour {
         //Rotate 1 degree around the y-axis every frame by default. Note this is 
         //simplified just to get things moving, more to it if trying for realism.
 
-        transform.Rotate(0f, rotationPerFrame, 0f);
+   
+        //Multiply * delta time to smooth out motion.
+        transform.Rotate(0f, rotationPerFrame * Time.deltaTime, 0f);
 
-        
-        
+
 
     }
 
